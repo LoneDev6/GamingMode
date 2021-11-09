@@ -14,7 +14,8 @@
 
 
 ## How to install?
-1. Save the `.ps1` file inside any folder you want and create a shortcut to this file
-1. Press WIN+R and run `shell:startup`
-1. Paste the shortcut in the opened folder
-1. Run the shortcut (it will run automatically after the first reboot, no need to do that each time)
+1. Save the `.ps1` file inside any folder you want
+2. Create a Windows scheduled task
+2. Set it to start on boot
+3. Set the action to start `powershell` and set arguments to `-WindowStyle Hidden -file "STEP 1 PATH"`
+4. Run the task manually
